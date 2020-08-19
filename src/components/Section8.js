@@ -31,14 +31,14 @@ const JumbotronCSS = css`
   top: 0;
 
   .synopsis {
-    padding-top: 0px;
+    padding-top: 100px;
     padding-left: 60px;
     max-width: 400px;
     color: white;
     padding-left: 60px;
 
     img {
-      width: 80%;
+      width: 150%;
     }
 
    .Icon {
