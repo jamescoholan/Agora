@@ -5,6 +5,7 @@ import Button from './Button'
 import wallpaper from '../img/MM/mm.jpg'
 import logo from '../img/Logos/MMLogo.png'
 import sample from './CH1.mp4'
+//import "../node_modules/video-react/dist/video-react.css";
 
 
 /**
@@ -14,7 +15,7 @@ const Section4 = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
     
-    <video className= "video-wrapper" autoPlay loop muted>
+    <video className= "video-wrapper" autoPlay loop muted playsInline>
     <source src={sample} type='video/mp4' />
     </video>
     
