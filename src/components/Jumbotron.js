@@ -18,7 +18,7 @@ const Jumbotron = ({ children }) => (
     <div className="synopsis">
       
 
-      <p>Agora Welcomes YOU!!!!</p>
+      <p>!!!!!!</p>
 
       <Button icon="play">Play</Button>
       <Button icon="info-circle">Info</Button>
