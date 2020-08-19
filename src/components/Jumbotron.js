@@ -17,8 +17,6 @@ const Jumbotron = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
 
-      <p>Welcome to Agora!</p>
-
       <Button icon="play">Play</Button>
       <Button icon="info-circle">Info</Button>
     </div>
@@ -37,7 +35,7 @@ const JumbotronCSS = css`
   top: 0;
 
   .synopsis {
-    padding-top: 630px;
+    padding-top: 680px;
     padding-left: 60px;
     padding-right: 60px;
     max-width: 500px;

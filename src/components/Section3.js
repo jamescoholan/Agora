@@ -1,19 +1,21 @@
-/** @jsx jsx */
 import React from 'react'
 import { css, jsx } from '@emotion/core'
 import Button from './Button'
 import wallpaper from '../img/CH/CH4K.jpg'
 import logo from '../img/Logos/CHLogo1.png'
+import { Player } from 'video-react';
 
 
+  
 /**
  * @function Section2
  */
 const Section3 = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
-      <img src={logo} />
-      
+
+      <Player src="https://agoravideos.s3-us-west-1.amazonaws.com/site.mp4" fluid autoPlay loop muted/>
+    
       <Button icon="play">Play</Button>
       <Button icon="info-circle">More Info</Button>
   
