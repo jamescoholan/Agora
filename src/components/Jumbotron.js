@@ -6,7 +6,7 @@ import Button from './Button'
 //import wallpaper from '../img/BE/BE5.jpg'
 //import wallpaper from '../img/Travis/TS2.jpg'
 //import wallpaper from '../img/Dua/DL9.jpg'
-import wallpaper from '../img/ShowShots/4K.jpg'
+import wallpaper from '../img/ShowShots/Highlight.png'
 //import logo from '../img/Logos/agoralogo.png'
 //import BackgroundVideo from './backgroundVideo'
 
