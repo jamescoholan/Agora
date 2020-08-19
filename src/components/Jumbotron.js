@@ -6,8 +6,8 @@ import Button from './Button'
 //import wallpaper from '../img/BE/BE5.jpg'
 //import wallpaper from '../img/Travis/TS2.jpg'
 //import wallpaper from '../img/Dua/DL9.jpg'
-import wallpaper from '../img/ShowShots/Agora..png'
-//import logo from '../img//Logos/Agora.png'
+import wallpaper from '/Users/jamescoholan/Downloads/AgoraMain/src/img/ShowShots/Highlight.png'
+import logo from '../img/Logos/agoralogo.png'
 //import BackgroundVideo from './backgroundVideo'
 
 /**
@@ -16,9 +16,8 @@ import wallpaper from '../img/ShowShots/Agora..png'
 const Jumbotron = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
-      
 
-      <p>!!!!!!</p>
+      <p>Welcome to Agora</p>
 
       <Button icon="play">Play</Button>
       <Button icon="info-circle">Info</Button>
@@ -38,14 +37,15 @@ const JumbotronCSS = css`
   top: 0;
 
   .synopsis {
-    padding-top: 30px;
+    padding-top: 630px;
     padding-left: 60px;
+    padding-right: 60px;
     max-width: 500px;
     color: white;
-    padding-left: 60px;
+    
 
     img {
-      width: 80%;
+      width: 200%;
     }
 
    .Icon {
