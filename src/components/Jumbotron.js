@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from 'react'
+//import React from 'react'
 import { css, jsx } from '@emotion/core'
 import Button from './Button'
 //import wallpaper from '../img/Agora/Agora..png'
@@ -7,7 +7,7 @@ import Button from './Button'
 //import wallpaper from '../img/Travis/TS2.jpg'
 //import wallpaper from '../img/Dua/DL9.jpg'
 import wallpaper from '../img/ShowShots/Agora..png'
-import logo from '../img//Logos/Agora.png'
+//import logo from '../img//Logos/Agora.png'
 //import BackgroundVideo from './backgroundVideo'
 
 /**
@@ -16,7 +16,7 @@ import logo from '../img//Logos/Agora.png'
 const Jumbotron = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
-      <img src={logo} />
+      
 
       <p>Welcome To Agora!!!</p>
 
