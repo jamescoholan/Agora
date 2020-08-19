@@ -4,6 +4,7 @@ import { css, jsx } from '@emotion/core'
 import Button from './Button'
 import wallpaper from '../img/MM/mm.jpg'
 import logo from '../img/Logos/MMLogo.png'
+import sample from './CH1.mp4'
 
 
 /**
@@ -12,8 +13,12 @@ import logo from '../img/Logos/MMLogo.png'
 const Section4 = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
+    
+    <video className= "video-wrapper" autoPlay loop muted>
+    <source src={sample} type='video/mp4' />
+    </video>
       <img src={logo} />
-      
+
       <Button icon="play">Play</Button>
       <Button icon="info-circle">More Info</Button>
   
@@ -32,11 +37,15 @@ const JumbotronCSS = css`
   top: 0;
 
   .synopsis {
-    padding-top: 100px;
-    padding-left: 60px;
+    padding-top: 0px;
+    padding-left: 0px;
     max-width: 400px;
     color: white;
-    padding-left: 60px;
+
+    .video-wrapper {
+      background-size: cover;
+      position: absolute;
+     }
 
     img {
       width: 150%;

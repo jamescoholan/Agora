@@ -1,23 +1,24 @@
 import React from 'react'
 import { css, jsx } from '@emotion/core'
-import Button from './Button'
+//import Button from './Button'
 import wallpaper from '../img/CH/CH4K.jpg'
 import logo from '../img/Logos/CHLogo1.png'
-import { Player } from 'video-react';
+//import { Player } from 'video-react';
+import sample from './site.mp4'
 
 
   
 /**
- * @function Section2
+ * @function Section3
  */
 const Section3 = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
 
-      <Player src="https://agoravideos.s3-us-west-1.amazonaws.com/CH1.mp4" fluid autoPlay loop muted/>
-    
-      <Button icon="play">Play</Button>
-      <Button icon="info-circle">More Info</Button>
+      
+    <video className= "video-wrapper" autoPlay loop muted>
+    <source src={sample} type='video/mp4'/>
+    </video>
   
     </div>
     {children}
@@ -34,11 +35,15 @@ const JumbotronCSS = css`
   top: 0;
 
   .synopsis {
-    padding-top: 100px;
-    padding-left: 60px;
+    padding-top: 0px;
+    padding-left: 0px;
     max-width: 400px;
     color: white;
-    padding-left: 60px;
+
+    .video-wrapper {
+      background-size: cover;
+      position: absolute;
+     }
 
     img {
       width: 150%;
