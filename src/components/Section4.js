@@ -17,6 +17,7 @@ const Section4 = ({ children }) => (
     <video className= "video-wrapper" autoPlay loop muted>
     <source src={sample} type='video/mp4' />
     </video>
+    
       <img src={logo} />
 
       <Button icon="play">Play</Button>

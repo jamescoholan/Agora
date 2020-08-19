@@ -1,6 +1,6 @@
 import React from 'react'
 import { css, jsx } from '@emotion/core'
-//import Button from './Button'
+import Button from './Button'
 import wallpaper from '../img/CH/CH4K.jpg'
 import logo from '../img/Logos/CHLogo1.png'
 //import { Player } from 'video-react';
@@ -15,11 +15,10 @@ const Section3 = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
 
-      
     <video className= "video-wrapper" autoPlay loop muted>
     <source src={sample} type='video/mp4'/>
     </video>
-  
+
     </div>
     {children}
   </div>
@@ -57,7 +56,7 @@ const JumbotronCSS = css`
 
   .ContentRow {
     position: absolute;
-    bottom: 20px;
+    bottom: 200px;
   }
 `
 export default Section3
