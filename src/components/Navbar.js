@@ -4,7 +4,7 @@ import { css, jsx } from '@emotion/core'
 import netflixLogo from '../img/Logos/agoralogo.png'
 import Icon from './Icon'
 
-const leftLinks = ['Home', 'Artists', 'Festivals', 'My Lineup', 'Latest', 'Trending']
+const leftLinks = ['Home', 'Artists', 'Festivals', 'Lineup', 'Trending']
 
 /**
  * @function Navbar
@@ -38,20 +38,20 @@ const Navbar = forwardRef((props, ref) => {
               );
             `
           : css`
-              background: transparent;
+              background: black;
             `
       ]}
     >
       <ul>
         <li>
           <a href="/">
-            <img height="75" src={netflixLogo} />
+            <img height="300" src={netflixLogo} />
           </a>
         </li>
 
         {leftLinks.map(link => (
           <li key={link}>
-            <a href="/">{link}</a>
+            <a href="https://syb349.wixsite.com/agora">{link}</a>
           </li>
         ))}
       </ul>
@@ -70,7 +70,7 @@ const Navbar = forwardRef((props, ref) => {
 
 const NavbarCSS = css`
   position: fixed;
-  height: 75px;
+  height: 125px;
   z-index: 99;
   width: 100%;
   padding: 0 25px;
@@ -82,11 +82,11 @@ const NavbarCSS = css`
     align-items: center;
   }
   li {
-    margin-right: 20px;
+    margin-right: 80px;
   }
   a {
-    font-size: 15px;
-    letter-spacing: 0.5px;
+    font-size: 30px;
+    letter-spacing: 4px;
     color: #e5e5e5;
   }
   a.active {
