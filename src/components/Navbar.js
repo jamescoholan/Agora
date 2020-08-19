@@ -4,7 +4,7 @@ import { css, jsx } from '@emotion/core'
 import netflixLogo from '../img/Logos/agoralogo.png'
 import Icon from './Icon'
 
-const leftLinks = ['Home', 'Artists', 'Festivals', 'Lineup', 'Latest', 'Trending']
+const leftLinks = ['Home', 'Artists', 'Festivals', 'My Lineup', 'Latest', 'Trending']
 
 /**
  * @function Navbar
@@ -38,16 +38,14 @@ const Navbar = forwardRef((props, ref) => {
               );
             `
           : css`
-              background: black;
-          
-
+              background: transparent;
             `
       ]}
     >
       <ul>
         <li>
           <a href="/">
-            <img height="250" src={netflixLogo} />
+            <img height="75" src={netflixLogo} />
           </a>
         </li>
 
@@ -72,10 +70,10 @@ const Navbar = forwardRef((props, ref) => {
 
 const NavbarCSS = css`
   position: fixed;
-  height: 150px;
+  height: 75px;
   z-index: 99;
   width: 100%;
-  padding: 65px;
+  padding: 0 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,11 +82,11 @@ const NavbarCSS = css`
     align-items: center;
   }
   li {
-    margin-right: 60px;
+    margin-right: 20px;
   }
   a {
-    font-size: 40px;
-    letter-spacing: 2px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
     color: #e5e5e5;
   }
   a.active {
