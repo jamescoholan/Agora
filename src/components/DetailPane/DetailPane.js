@@ -7,7 +7,7 @@ import Episodes from './Episodes'
 import Details from './Details'
 import Icon from '../Icon'
 import logo from '../DetailPane/PM3.jpg'
-import Background from '../DetailPane/UtsiBackgroun.jpg'
+//import Background from '../DetailPane/UtsiBackgroun.jpg'
 
 const TABS = ['Overview', 'Concerts', 'More']
 
