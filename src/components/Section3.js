@@ -14,7 +14,7 @@ const Section3 = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
 
-      <Player src="https://agoravideos.s3-us-west-1.amazonaws.com/site.mp4" fluid autoPlay loop muted/>
+      <Player src="https://agoravideos.s3-us-west-1.amazonaws.com/CH1.mp4" fluid autoPlay loop muted/>
     
       <Button icon="play">Play</Button>
       <Button icon="info-circle">More Info</Button>
