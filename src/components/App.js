@@ -49,7 +49,7 @@ const App = () => {
       left: 0,
       behavior: 'smooth'
     })
-  }, [category, navRef, top])
+  }, [category])
 
   const setActive = activeRow => {
     activeRow.category ? setActiveRow(activeRow) : setActiveRow(initialRow)
