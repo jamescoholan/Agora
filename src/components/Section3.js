@@ -6,8 +6,6 @@ import logo from '../img/Logos/CHLogo1.png'
 //import { Player } from 'video-react';
 import sample from './site.mp4'
 
-
-  
 /**
  * @function Section3
  */
