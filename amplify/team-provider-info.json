@@ -1,0 +1,26 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-agoramain-dev-104537-authRole",
+            "UnauthRoleArn": "arn:aws:iam::554578744415:role/amplify-agoramain-dev-104537-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::554578744415:role/amplify-agoramain-dev-104537-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-agoramain-dev-104537-deployment",
+            "UnauthRoleName": "amplify-agoramain-dev-104537-unauthRole",
+            "StackName": "amplify-agoramain-dev-104537",
+            "StackId": "arn:aws:cloudformation:eu-west-1:554578744415:stack/amplify-agoramain-dev-104537/d1c76f20-e2f3-11ea-840e-066e235b9b62",
+            "AmplifyAppId": "d3ab49n03cy2rz"
+        },
+        "categories": {
+            "auth": {
+                "agoramaincfa01e35": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3ab49n03cy2rz",
+                    "type": "cicd"
+                }
+            }
+        }
+    }
+}

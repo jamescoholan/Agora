@@ -1,0 +1,32 @@
+{
+    "auth": {
+        "agoramaincfa01e35": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": []
+        }
+    },
+    "api": {
+        "agoramain": {
+            "service": "AppSync",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "authConfig": {
+                    "defaultAuthentication": {
+                        "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+                        "userPoolConfig": {
+                            "userPoolId": "authagoramaincfa01e35"
+                        }
+                    },
+                    "additionalAuthenticationProviders": []
+                }
+            }
+        }
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "type": "cicd"
+        }
+    }
+}
