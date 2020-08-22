@@ -51,7 +51,7 @@ const Navbar = forwardRef((props, ref) => {
 
         {leftLinks.map(link => (
           <li key={link}>
-            <a href="https://syb349.wixsite.com/agora">{link}</a>
+            <a href="https://www.youtube.com/watch?v=Xak8aGTgMTo">{link}</a>
           </li>
         ))}
       </ul>
