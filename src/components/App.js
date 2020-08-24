@@ -19,7 +19,7 @@ import DuaRow from './Dua'
 import TravisRow from './Travis'
 import BillieRow from './Billie'
 import PostRow from './Post'
-//Booty
+
 
 const initialRow = {
   category: '',
@@ -34,7 +34,7 @@ const App = () => {
   const [activeRow, setActiveRow] = useState(initialRow)
 
   const {
-    category,
+    category, 
     pos: { top, bottom }
   } = activeRow
 
@@ -55,6 +55,7 @@ const App = () => {
     activeRow.category ? setActiveRow(activeRow) : setActiveRow(initialRow)
   }
 
+  //<CalvinRow category={categories[0]} setActive={setActive} />
   return (
     <>
       <Global styles={GlobalCSS} />
@@ -64,9 +65,7 @@ const App = () => {
         <UtsiRow category={categories[0]} setActive={setActive} />
       </Jumbotron>
 
-      <Section3>
-        <CalvinRow category={categories[0]} setActive={setActive} />
-      </Section3>
+      <Section3> </Section3>
 
       <Section4>
         <MMRow category={categories[0]} setActive={setActive} />

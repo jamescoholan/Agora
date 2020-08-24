@@ -8,6 +8,10 @@ import sample from './CH1.mp4'
 //import "../node_modules/video-react/dist/video-react.css";
 
 
+//<video className= "video-wrapper" autoPlay loop muted playsInline width={1790} height={1000}>
+//    <source src={sample} type='video/mp4' />
+//    </video>
+
 /**
  * @function Section4
  */
@@ -15,9 +19,7 @@ const Section4 = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
     
-    <video className= "video-wrapper" autoPlay loop muted playsInline>
-    <source src={sample} type='video/mp4' />
-    </video>
+    
     
       <img src={logo} />
 

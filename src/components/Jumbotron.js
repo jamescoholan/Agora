@@ -17,8 +17,8 @@ const Jumbotron = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
 
-      <Button icon="play">Play!</Button>
-      <Button icon="info-circle">TEST!</Button>
+      <Button icon="play">Play</Button>
+      <Button icon="info-circle">Info</Button>
     </div>
 
     {children}

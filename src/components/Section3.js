@@ -1,60 +1,65 @@
-import React from 'react'
-import { css, jsx } from '@emotion/core'
-import Button from './Button'
-import wallpaper from '../img/CH/CH4K.jpg'
-import logo from '../img/Logos/CHLogo1.png'
-//import { Player } from 'video-react';
-import sample from './site.mp4'
+  import React from 'react'
+  import { css, jsx } from '@emotion/core'
+  import Button from './Button'
+  import wallpaper from '../img/CH/CH4K.jpg'
+  import logo from '../img/Logos/CHLogo1.png'
+  import CalvinRow from "./Calvin"
+  //import { Player } from 'video-react';
+  import sample from './Nu.mp4'
 
-/**
- * @function Section3
- */
-const Section3 = ({ children }) => (
-  <div css={JumbotronCSS}>
-    <div className="synopsis">
+  /**
+   * @function Section3
+   */
+  const Section3 = ({ children }) => (
+    <div css={JumbotronCSS}>
+      <div className="synopsis">
 
-    <video className= "video-wrapper" autoPlay loop muted>
-    <source src={sample} type='video/mp4'/>
-    </video>
-
+      
+      <CalvinRow />
+      <video className= "video-wrapper" autoPlay loop muted width={1793}
+          height={1000} fluid playsInline startTime>
+      <source src={sample} type='video/mp4'/>
+      </video>
+      
+      </div>
+      {children}
     </div>
-    {children}
-  </div>
-)
+  )
 
-const JumbotronCSS = css`
-  position: relative;
-  background-image: url('${wallpaper}');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 109vh;
-  top: 0;
+  const JumbotronCSS = css`
+    position: relative;
+    background-image: url('${wallpaper}');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 109vh;
+    top: 0;
 
-  .synopsis {
-    padding-top: 0px;
-    padding-left: 0px;
-    max-width: 400px;
-    color: white;
+    .synopsis {
+      padding-top: 0px;
+      padding-left: 0px;
+      max-width: 400px;
+      color: white;
 
-    .video-wrapper {
-      background-size: cover;
+      .video-wrapper {
+        background-size: auto;
+        position: absolute;
+        
+      }
+
+      img {
+        width: 150%;
+      }
+
+    .Icon {
+        margin-right: 10.5px;
+        font-size: 18px;
+      }
+    }
+
+    .ContentRow {
       position: absolute;
-     }
-
-    img {
-      width: 150%;
+      bottom: 200px;
     }
-
-   .Icon {
-      margin-right: 10.5px;
-      font-size: 18px;
-    }
-  }
-
-  .ContentRow {
-    position: absolute;
-    bottom: 200px;
-  }
-`
-export default Section3
+  `
+  export default Section3
