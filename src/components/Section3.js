@@ -5,7 +5,7 @@
   import logo from '../img/Logos/CHLogo1.png'
   import CalvinRow from "./Calvin"
   //import { Player } from 'video-react';
-  import sample from './Nu.mp4'
+  import sample from './Main2.mp4'
 
   /**
    * @function Section3

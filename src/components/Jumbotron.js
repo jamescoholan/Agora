@@ -6,8 +6,8 @@ import Button from './Button'
 //import wallpaper from '../img/BE/BE5.jpg'
 //import wallpaper from '../img/Travis/TS2.jpg'
 //import wallpaper from '../img/Dua/DL9.jpg'
-import wallpaper from '../img/ShowShots/Highlight.png'
-//import logo from '../img/Logos/agoralogo.png'
+import wallpaper from '../img/SYB/SYB.JPG'
+import logo from '../img/Logos/SYB Logo.png'
 //import BackgroundVideo from './backgroundVideo'
 
 /**
@@ -16,6 +16,7 @@ import wallpaper from '../img/ShowShots/Highlight.png'
 const Jumbotron = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
+    <img src={logo} />
 
       <Button icon="play">Play</Button>
       <Button icon="info-circle">Info</Button>

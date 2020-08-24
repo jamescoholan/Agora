@@ -6,6 +6,7 @@ import DetailPane from './DetailPane/DetailPane'
 import Jumbotron from './Jumbotron'
 import Section2 from './Section2'
 import Section3 from './Section3'
+import Section32 from './Section3-2'
 import Section4 from './Section4'
 import Section5 from './Section5'
 import Section6 from './Section6'
@@ -61,11 +62,9 @@ const App = () => {
       <Global styles={GlobalCSS} />
       <Navbar ref={navRef} />
 
-      <Jumbotron>
-        <UtsiRow category={categories[0]} setActive={setActive} />
-      </Jumbotron>
-
       <Section3> </Section3>
+      
+      <Section32> </Section32>
 
       <Section4>
         <MMRow category={categories[0]} setActive={setActive} />
@@ -90,6 +89,10 @@ const App = () => {
       <Section8>
         <PostRow category={categories[0]} setActive={setActive} />
       </Section8>
+
+      <Jumbotron>
+        <UtsiRow category={categories[0]} setActive={setActive} />
+      </Jumbotron>
 
       {categories.slice(0).map(category => (
         <div></div>

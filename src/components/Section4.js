@@ -12,6 +12,7 @@ import sample from './CH1.mp4'
 //    <source src={sample} type='video/mp4' />
 //    </video>
 
+
 /**
  * @function Section4
  */
@@ -20,8 +21,8 @@ const Section4 = ({ children }) => (
     <div className="synopsis">
     
     
-    
-      <img src={logo} />
+
+      <img src={logo}/>
 
       <Button icon="play">Play</Button>
       <Button icon="info-circle">More Info</Button>
@@ -41,15 +42,11 @@ const JumbotronCSS = css`
   top: 0;
 
   .synopsis {
-    padding-top: 0px;
-    padding-left: 0px;
+    padding-top: 100px;
+    padding-left: 60px;
     max-width: 400px;
     color: white;
-
-    .video-wrapper {
-      background-size: cover;
-      position: absolute;
-     }
+    padding-left: 60px;
 
     img {
       width: 150%;
