@@ -11,17 +11,18 @@ import logo from '../img/Logos/SYB Logo.png'
 //import BackgroundVideo from './backgroundVideo'
 
 /**
- * @function Jumbotron
+ * @function Section7
  */
 const Jumbotron = ({ children }) => (
   <div css={JumbotronCSS}>
     <div className="synopsis">
-    <img src={logo} />
-
+      <img src={logo} />
+      
+     
       <Button icon="play">Play</Button>
-      <Button icon="info-circle">Info</Button>
+      <Button icon="info-circle">More Info</Button>
+  
     </div>
-
     {children}
   </div>
 )
@@ -36,15 +37,14 @@ const JumbotronCSS = css`
   top: 0;
 
   .synopsis {
-    padding-top: 680px;
+    padding-top: 450px;
     padding-left: 60px;
-    padding-right: 60px;
-    max-width: 500px;
+    max-width: 400px;
     color: white;
-    
+    padding-left: 60px;
 
     img {
-      width: 200%;
+      width: 150%;
     }
 
    .Icon {
