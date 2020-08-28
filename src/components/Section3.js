@@ -1,32 +1,38 @@
-  import React from 'react'
-  import { css, jsx } from '@emotion/core'
-  import Button from './Button'
-  import wallpaper from '../img/CH/CH4K.jpg'
-  import logo from '../img/Logos/CHLogo1.png'
-  import CalvinRow from "./Calvin"
-  //import { Player } from 'video-react';
-  import sample from './Main2.mp4'
+import React from "react";
+import { css, jsx } from "@emotion/core";
+import Button from "./Button";
+import wallpaper from "../img/CH/CH4K.jpg";
+import logo from "../img/Logos/CHLogo1.png";
+import CalvinRow from "./Calvin";
+import sample from "./Main2.mp4";
 
-  /**
-   * @function Section3
-   */
-  const Section3 = ({ children }) => (
-    <div css={JumbotronCSS}>
-      <div className="synopsis">
-
+/**
+ * @function Section3
+ */
+const Section3 = ({ children }) => (
+  <div css={JumbotronCSS}>
+    <div className="synopsis">
+    <CalvinRow />
+      <video
+        className="video-wrapper"
+        autoPlay
+        loop
+        muted
+        width={1793}
+        height={1000}
+        fluid
+        playsInline
+        startTime
+      >
       
-      <CalvinRow />
-      <video className= "video-wrapper" autoPlay loop muted width={1793}
-          height={1000} fluid playsInline startTime>
-      <source src={sample} type='video/mp4'/>
+        <source src={sample} type="video/mp4" />
       </video>
-      
-      </div>
-      {children}
     </div>
-  )
+    {children}
+  </div>
+);
 
-  const JumbotronCSS = css`
+const JumbotronCSS = css`
     position: relative;
     background-image: url('${wallpaper}');
     background-repeat: no-repeat;
@@ -61,5 +67,5 @@
       position: absolute;
       bottom: 200px;
     }
-  `
-  export default Section3
+  `;
+export default Section3;

@@ -48,7 +48,7 @@ const CalvinRow = ({ category, setActive }) => {
           .block-wrapper {
             display: flex;
             width: 100%;
-            position: absolute;
+            position: fixed;
             padding-top: 780px;
             overflow-x: hidden;
           }
