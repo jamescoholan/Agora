@@ -5,7 +5,7 @@
   import logo from '../img/Logos/CHLogo1.png'
   import CalvinRow from "./Calvin"
 
-  import sample from './TS.mp4'
+  import sample from './SM.mp4'
 
   /**
    * @function Section33
