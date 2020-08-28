@@ -6,8 +6,8 @@ import Button from './Button'
 //import wallpaper from '../img/BE/BE5.jpg'
 //import wallpaper from '../img/Travis/TS2.jpg'
 //import wallpaper from '../img/Dua/DL9.jpg'
-import wallpaper from '../img/SYB/SYB.JPG'
-import logo from '../img/Logos/SYB Logo.png'
+import wallpaper from '../img/CH/Calvin6.jpg'
+import logo from '../img/Logos/CHLogo1.png'
 //import BackgroundVideo from './backgroundVideo'
 
 /**
@@ -37,7 +37,7 @@ const JumbotronCSS = css`
   top: 0;
 
   .synopsis {
-    padding-top: 450px;
+    padding-top: 120px;
     padding-left: 60px;
     max-width: 400px;
     color: white;

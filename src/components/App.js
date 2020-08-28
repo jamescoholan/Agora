@@ -7,6 +7,7 @@ import Jumbotron from './Jumbotron'
 import Section2 from './Section2'
 import Section3 from './Section3'
 import Section32 from './Section3-2'
+import Section33 from './Section3-3'
 import Section4 from './Section4'
 import Section5 from './Section5'
 import Section6 from './Section6'
@@ -66,6 +67,8 @@ const App = () => {
       
       <Section32> </Section32>
 
+      <Section33> </Section33>
+
       <Section4>
         <MMRow category={categories[0]} setActive={setActive} />
       </Section4>
@@ -103,10 +106,12 @@ const App = () => {
         top={bottom + window.scrollY}
         setActive={setActive}
       />
-      <Footer />
+      
     </>
   )
 }
+
+//<Footer />
 
 const GlobalCSS = css`
   * {

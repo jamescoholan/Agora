@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React, { useState, useEffect, forwardRef } from 'react'
 import { css, jsx } from '@emotion/core'
-import netflixLogo from '../img/Logos/agoralogo.png'
+import netflixLogo from '../img/Logos/AgoraNu2.png'
 import Icon from './Icon'
 
 const leftLinks = ['Home', 'Artists', 'Festivals', 'Lineup', 'Trending']
@@ -45,7 +45,7 @@ const Navbar = forwardRef((props, ref) => {
       <ul>
         <li>
           <a href="/">
-            <img height="300" src={netflixLogo} />
+            <img height="150" src={netflixLogo} />
           </a>
         </li>
 
@@ -82,10 +82,10 @@ const NavbarCSS = css`
     align-items: center;
   }
   li {
-    margin-right: 80px;
+    margin-right: 160px;
   }
   a {
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 4px;
     color: #e5e5e5;
   }

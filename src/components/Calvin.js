@@ -4,11 +4,11 @@ import { css, jsx } from '@emotion/core'
 import ContentBlock from './ContentBlock'
 import Icon from './Icon'
 
-import one from '../img/CH/Calvin1.jpg'
-import two from '../img/CH/Calvin2.jpg'
-import three from '../img/CH/Calvin3.jpg'
+import one from '../img/Dua/DL8.jpg'
+import two from '../img/BE/BE3.jpg'
+import three from '../img/Drake/Drake3.jpg'
 import four from '../img/CH/Calvin4.jpg'
-import five from '../img/CH/Calvin5.jpg'
+import five from '../img/MM/MM7.jpg'
 import six from '../img/CH/Calvin6.jpg'
 
 const content = [one, two, three, four, five, six]
