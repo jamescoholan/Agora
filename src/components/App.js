@@ -137,7 +137,7 @@ const GlobalCSS = css`
   }
 
   p {
-    font-size: 20px;
+    font-size: 20.1px;
   }
 
   ul {
