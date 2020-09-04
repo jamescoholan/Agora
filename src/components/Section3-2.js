@@ -14,7 +14,6 @@
     <div css={JumbotronCSS}>
       <div className="synopsis">
 
-      
       <CalvinRow />
       <video className= "video-wrapper" autoPlay loop muted width={1793}
           height={1000} fluid playsInline startTime>
@@ -44,7 +43,6 @@
       .video-wrapper {
         background-size: auto;
         position: absolute;
-        
       }
 
       img {

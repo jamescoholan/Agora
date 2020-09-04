@@ -1,18 +1,21 @@
 /** @jsx jsx */
-import React, { useState, useCallback } from 'react'
-import { css, jsx } from '@emotion/core'
+import React, { useState, useCallback } from "react";
+import { css, jsx } from "@emotion/core";
+import Button from "./Button";
+//import Icon from "/Users/jamescoholan/Downloads/AgoraMain/src/components/Icon";
+//<Icon type="times" onClick={} />
 
 /**
  * @function ContentBlock
  */
 const ContentBlock = ({ children, img }) => {
-  const [hovered, setHovered] = useState(false)
+  const [hovered, setHovered] = useState(false);
 
-  const handleHover = useCallback(e => {
-    e.type === 'mouseenter'
-      ? setHovered(e.target.getAttribute('data-img'))
-      : setHovered(false)
-  }, [])
+  const handleHover = useCallback((e) => {
+    e.type === "mouseenter"
+      ? setHovered(e.target.getAttribute("data-img"))
+      : setHovered(false);
+  }, []);
 
   return (
     <div
@@ -22,11 +25,12 @@ const ContentBlock = ({ children, img }) => {
       onMouseEnter={handleHover}
       onMouseLeave={handleHover}
     >
+    
       {img === hovered && <div className="content">{children}</div>}
       <img src={img} />
     </div>
-  )
-}
+  );
+};
 
 const ContentBlockCSS = css`
   position: relative;
@@ -64,6 +68,6 @@ const ContentBlockCSS = css`
     width: 100%;
     pointer-events: none;
   }
-`
+`;
 
-export default ContentBlock
+export default ContentBlock;

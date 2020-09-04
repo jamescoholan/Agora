@@ -24,7 +24,6 @@ const Section3 = ({ children }) => (
         playsInline
         startTime
       >
-      
         <source src={sample} type="video/mp4" />
       </video>
     </div>

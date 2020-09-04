@@ -1,61 +1,62 @@
-import React, { useState, useEffect, createRef } from 'react'
-import { Global, css } from '@emotion/core'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import DetailPane from './DetailPane/DetailPane'
-import Jumbotron from './Jumbotron'
-import Section2 from './Section2'
-import Section3 from './Section3'
-import Section32 from './Section3-2'
-import Section33 from './Section3-3'
-import Section4 from './Section4'
-import Section5 from './Section5'
-import Section6 from './Section6'
-import Section7 from './Section7'
-import Section8 from './Section8'
-import UtsiRow from './UtsiRow'
-import CalvinRow from './Calvin'
-import DrakeRow from './Drake'
-import MMRow from './MM'
-import DuaRow from './Dua'
-import TravisRow from './Travis'
-import BillieRow from './Billie'
-import PostRow from './Post'
-
+import React, { useState, useEffect, createRef } from "react";
+import { Global, css } from "@emotion/core";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import DetailPane from "./DetailPane/DetailPane";
+import Jumbotron from "./Jumbotron";
+import Section2 from "./Section2";
+import Section3 from "./Section3";
+import Section32 from "./Section3-2";
+import Section33 from "./Section3-3";
+import Section4 from "./Section4";
+import Section5 from "./Section5";
+import Section6 from "./Section6";
+import Section7 from "./Section7";
+import Section8 from "./Section8";
+import UtsiRow from "./UtsiRow";
+import CalvinRow from "./Calvin";
+import DrakeRow from "./Drake";
+import MMRow from "./MM";
+import DuaRow from "./Dua";
+import TravisRow from "./Travis";
+import BillieRow from "./Billie";
+import PostRow from "./Post";
+//import React-Player from "./react-player"
+import ResponsivePlayer from "./ResponsivePlayer";
 
 const initialRow = {
-  category: '',
-  pos: { top: 0, bottom: 0 }
-}
+  category: "",
+  pos: { top: 0, bottom: 0 },
+};
 
-const categories = ['Shows']
+const categories = ["Shows"];
 /**
  * @function App
  */
 const App = () => {
-  const [activeRow, setActiveRow] = useState(initialRow)
+  const [activeRow, setActiveRow] = useState(initialRow);
 
   const {
-    category, 
-    pos: { top, bottom }
-  } = activeRow
+    category,
+    pos: { top, bottom },
+  } = activeRow;
 
-  const navRef = createRef()
+  const navRef = createRef();
 
   useEffect(() => {
-    if (!category) return
-    const navHeight = navRef.current.offsetHeight
+    if (!category) return;
+    const navHeight = navRef.current.offsetHeight;
 
     window.scrollTo({
       top: top + window.scrollY - navHeight,
       left: 0,
-      behavior: 'smooth'
-    })
-  }, [category])
+      behavior: "smooth",
+    });
+  }, [category]);
 
-  const setActive = activeRow => {
-    activeRow.category ? setActiveRow(activeRow) : setActiveRow(initialRow)
-  }
+  const setActive = (activeRow) => {
+    activeRow.category ? setActiveRow(activeRow) : setActiveRow(initialRow);
+  };
 
   //<CalvinRow category={categories[0]} setActive={setActive} />
   return (
@@ -64,10 +65,8 @@ const App = () => {
       <Navbar ref={navRef} />
 
       <Section3> </Section3>
-      
-      <Section32> </Section32>
 
-      <Section33> </Section33>
+      <ResponsivePlayer />
 
       <Section4>
         <MMRow category={categories[0]} setActive={setActive} />
@@ -97,7 +96,11 @@ const App = () => {
         <UtsiRow category={categories[0]} setActive={setActive} />
       </Jumbotron>
 
-      {categories.slice(0).map(category => (
+      <Section32> </Section32>
+
+      <Section33> </Section33>
+
+      {categories.slice(0).map((category) => (
         <div></div>
       ))}
 
@@ -106,17 +109,16 @@ const App = () => {
         top={bottom + window.scrollY}
         setActive={setActive}
       />
-      
     </>
-  )
-}
+  );
+};
 
 //<Footer />
 
 const GlobalCSS = css`
   * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   html,
@@ -165,6 +167,6 @@ const GlobalCSS = css`
     cursor: pointer;
     color: white;
   }
-`
+`;
 
-export default App
+export default App;

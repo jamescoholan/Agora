@@ -3,6 +3,7 @@ import React, { useCallback } from 'react'
 import { css, jsx } from '@emotion/core'
 import ContentBlock from './ContentBlock'
 import Icon from './Icon'
+import Button from './Button'
 
 import one from '../img/Dua/Dua1.jpg'
 import two from '../img/Dua/DL11.jpg'
@@ -58,6 +59,8 @@ const DuaRow = ({ category, setActive }) => {
             <ContentBlock key={img} img={img}>
               <Icon type="play" />
               <Icon type="info-circle" onClick={getPos} />
+       <Button />
+              />
             </ContentBlock>
           ))}
         </div>
