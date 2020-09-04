@@ -6,12 +6,6 @@ import wallpaper from '../img/MM/mm.jpg'
 import logo from '../img/Logos/MMLogo.png'
 import sample from './CH1.mp4'
 import ResponsivePlayer from "./ResponsivePlayer"
-//import "../node_modules/video-react/dist/video-react.css";
-//<video className= "video-wrapper" autoPlay loop muted playsInline width={1790} height={1000}>
-//    <source src={sample} type='video/mp4' />
-//    </video>
-
-
 
 /**
  * @function Section4
@@ -21,19 +15,18 @@ const Section4 = ({ children }) => (
     <div className="synopsis">
     
       <img src={logo}/>
-
+    
       <Button 
-     
+      onClick={'Play'}
       icon="play">Play
       </Button>
-      
+  
       <Button icon="info-circle">More Info</Button>
   
     </div>
     {children}
   </div> 
 )
-
 
 const JumbotronCSS = css`
   position: relative;
