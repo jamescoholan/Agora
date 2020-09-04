@@ -45,7 +45,7 @@ const Navbar = forwardRef((props, ref) => {
       <ul>
         <li>
           <a href="/">
-            <img height="150" src={netflixLogo} />
+            <img height="151" src={netflixLogo} />
           </a>
         </li>
 
