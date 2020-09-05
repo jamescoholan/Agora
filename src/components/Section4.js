@@ -18,7 +18,7 @@ const Section4 = ({ children }) => (
     
       <Button 
       onClick={'Play'}
-      icon="play">Play!
+      icon="play">Play
       </Button>
   
       <Button icon="info-circle">More Info</Button>
