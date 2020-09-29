@@ -4,7 +4,7 @@ import { css, jsx } from '@emotion/core'
 import netflixLogo from '../img/Logos/AgoraNu2.png'
 import Icon from './Icon'
 
-const leftLinks = ['Home', 'Artists', 'Festivals', 'Lineup', 'Trending']
+const leftLinks = ['Welcome', 'To', 'Agora',]
 
 /**
  * @function Navbar
@@ -82,7 +82,7 @@ const NavbarCSS = css`
     align-items: center;
   }
   li {
-    margin-right: 160px;
+    margin-right: 30px;
   }
   a {
     font-size: 35px;

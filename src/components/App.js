@@ -68,38 +68,9 @@ const App = () => {
 
       <ResponsivePlayer />
 
-      <Section4>
-        <MMRow category={categories[0]} setActive={setActive} />
-      </Section4>
+      <Footer> </Footer>
 
-      <Section5>
-        <DuaRow category={categories[0]} setActive={setActive} />
-      </Section5>
-
-      <Section2>
-        <DrakeRow category={categories[0]} setActive={setActive} />
-      </Section2>
-
-      <Section6>
-        <TravisRow category={categories[0]} setActive={setActive} />
-      </Section6>
-
-      <Section7>
-        <BillieRow category={categories[0]} setActive={setActive} />
-      </Section7>
-
-      <Section8>
-        <PostRow category={categories[0]} setActive={setActive} />
-      </Section8>
-
-      <Jumbotron>
-        <UtsiRow category={categories[0]} setActive={setActive} />
-      </Jumbotron>
-
-      <Section32> </Section32>
-
-      <Section33> </Section33>
-
+      
       {categories.slice(0).map((category) => (
         <div></div>
       ))}
@@ -170,3 +141,38 @@ const GlobalCSS = css`
 `;
 
 export default App;
+
+
+
+//
+//      <Section4>
+//        <MMRow category={categories[0]} setActive={setActive} />
+//      </Section4>
+//
+//      <Section5>
+//        <DuaRow category={categories[0]} setActive={setActive} />
+//      </Section5>
+//
+//      <Section2>
+//        <DrakeRow category={categories[0]} setActive={setActive} />
+//      </Section2>
+//
+//      <Section6>
+//        <TravisRow category={categories[0]} setActive={setActive} />
+//      </Section6>
+//
+//      <Section7>
+//        <BillieRow category={categories[0]} setActive={setActive} />
+//      </Section7>
+//
+//      <Section8>
+//        <PostRow category={categories[0]} setActive={setActive} />
+//      </Section8>
+//
+//      <Jumbotron>
+//        <UtsiRow category={categories[0]} setActive={setActive} />
+//      </Jumbotron>
+
+//<Section32> </Section32>
+//
+//<Section33> </Section33>
