@@ -1,11 +1,11 @@
 {
-    "AppSyncApiName": "agoramain",
-    "DynamoDBBillingMode": "PAY_PER_REQUEST",
-    "DynamoDBEnableServerSideEncryption": false,
-    "AuthCognitoUserPoolId": {
-        "Fn::GetAtt": [
-            "authagoramaincfa01e35",
-            "Outputs.UserPoolId"
-        ]
-    }
+  "AppSyncApiName": "agoramain",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authagoramaincfa01e35",
+      "Outputs.UserPoolId"
+    ]
+  }
 }
